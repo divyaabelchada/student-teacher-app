@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddAgencyData">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="10dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="24dp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewBg"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@+id/guidelineLeft"
+        app:layout_constraintTop_toTopOf="@+id/guidelineTop">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardConstraintLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineBelowTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_begin="0dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineDataLeft"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineDataRight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="10dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineDataBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_end="10dp" />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toTopOf="@+id/guidelineDataBottom"
+                app:layout_constraintEnd_toStartOf="@+id/guidelineDataRight"
+                app:layout_constraintStart_toStartOf="@+id/guidelineDataLeft"
+                app:layout_constraintTop_toTopOf="@+id/guidelineBelowTitle">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/AgencyInfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:paddingLeft="5dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="10dp">
+
+                        <androidx.constraintlayout.widget.Guideline
+                            android:id="@+id/guidelineDivideHalf"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            app:layout_constraintGuide_percent="0.5" />
+
+
+                        <ImageView
+                            android:id="@+id/uploadPictureIcon"
+                            android:layout_width="match_parent"
+                            android:layout_height="174dp"
+                            android:scaleType="centerCrop"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:srcCompat="@drawable/ic_default_img"
+                            tools:ignore="MissingConstraints" />
+
+                        <ProgressBar
+                            android:id="@+id/imageUploadProgressBar"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginEnd="10dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/uploadPictureIcon" />
+
+                        <TextView
+                            android:id="@+id/imgDesc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="3dp"
+                            android:text="@string/upload_pic"
+                            android:textColor="@color/colorGrey"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imageUploadProgressBar" />
+
+                        <TextView
+                            android:id="@+id/agencyNameTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/name_of_agency"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/imgDesc" />
+
+
+                        <EditText
+                            android:id="@+id/agencyNameData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:hint="@string/name_of_agency"
+                            android:inputType="text"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyNameTextView" />
+
+                        <TextView
+                            android:id="@+id/agencyDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="description*"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyNameData" />
+
+                        <EditText
+                            android:id="@+id/agencyDescData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="About the Agency"
+                            android:inputType="textMultiLine"
+                            android:textSize="16sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/agencyDescription" />
+
+
+                        <TextView
+                            android:id="@+id/time"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/opening_hours"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyDescData" />
+
+                        <EditText
+                            android:id="@+id/openingTimeData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginEnd="5dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="@string/opening_time"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guidelineDivideHalf"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/time" />
+
+                        <EditText
+                            android:id="@+id/closingTimeData"
+                            android:layout_width="0dp"
+                            android:autofillHints=""
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:ems="10"
+                            android:textSize="18sp"
+                            android:hint="@string/closing_time"
+                            android:inputType="time"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="@+id/guidelineDivideHalf"
+                            app:layout_constraintTop_toBottomOf="@+id/time"/>
+
+                        <TextView
+                            android:id="@+id/contactTxtView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/contactNo"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyLocationData" />
+
+                        <EditText
+                            android:id="@+id/agencyContactData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="@string/contact"
+                            android:inputType="phone|number"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toStartOf="@+id/guidelineDivideHalf"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/contactTxtView" />
+
+                        <TextView
+                            android:id="@+id/locationTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/location"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/openingTimeData" />
+
+                        <EditText
+                            android:id="@+id/agencyLocationData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="eg. Chembur"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/locationTextView" />
+
+                        <TextView
+                            android:id="@+id/addressTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/address"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyContactData" />
+
+                        <EditText
+                            android:id="@+id/agencyAddressData"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="@string/address"
+                            android:inputType="textPostalAddress|textMultiLine"
+                            android:textSize="18sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="1.0"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/addressTextView" />
+
+                        <TextView
+                            android:id="@+id/mapLinkTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="1dp"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/link_map"
+                            android:textColor="@color/colorGrey"
+                            android:textSize="12sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/agencyAddressData" />
+
+                        <ImageView
+                            android:id="@+id/map_link"
+                            android:layout_width="0dp"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="10dp"
+                            android:paddingStart="5dp"
+                            android:paddingEnd="5dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/mapLinkTextView"
+                            app:srcCompat="@drawable/add_map_link" />
+
+                        <EditText
+                            android:id="@+id/map_link_data"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="10dp"
+                            android:autofillHints=""
+                            android:ems="10"
+                            android:hint="@string/enter_link"
+                            android:inputType="text"
+                            android:textSize="18sp"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/map_link" />
+
+                        <Button
+                            android:id="@+id/dataSubmitButton"
+                            android:layout_width="120dp"
+                            android:layout_height="30dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@drawable/btn_bg"
+                            android:elevation="4dp"
+                            android:gravity="center"
+                            android:text="@string/submit"
+                            android:textColor="#FFFFFF"
+                            android:textSize="14sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/map_link_data"
+                            tools:ignore="MissingConstraints" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </LinearLayout>
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

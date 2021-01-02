@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.acplogs">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ves_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ves_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".TeachersSection"></activity>
+        <activity android:name=".AllStudents" />
+        <activity android:name=".SocialWorkLog" />
+        <activity android:name=".StudentFeedbacks" />
+        <activity
+            android:name=".StudentProfile"
+            android:label="Student Profile" />
+        <activity android:name=".TeacherDashboard" />
+        <activity
+            android:name=".TeacherSignUpActivity"
+            android:label="Teacher SignUp" />
+        <activity
+            android:name=".AddAgencyData"
+            android:label="Add new Agency" />
+        <activity
+            android:name=".AgencyProfile"
+            android:label="Agency Profile" />
+        <activity
+            android:name=".UploadProfile"
+            android:label="Upload your Profile" />
+        <activity
+            android:name=".StudentCorner"
+            android:label="Students Enrolled" />
+        <activity
+            android:name=".AgencyInfo"
+            android:label="Agencies" />
+        <activity
+            android:name=".AddingSocialWorkLog"
+            android:label="Add your Social Work" />
+        <activity
+            android:name=".StudentSignUpActivity"
+            android:label="Add your Data" />
+        <activity
+            android:name=".StudentDashboard"
+            android:label="Dashboard" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="ACP Module 3 "
+            android:theme="@style/AppTheme_NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

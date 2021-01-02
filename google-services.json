@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "839341731337",
+    "firebase_url": "https://acp-vesasc.firebaseio.com",
+    "project_id": "acp-vesasc",
+    "storage_bucket": "acp-vesasc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:839341731337:android:443ae126a2fff3a520d2d8",
+        "android_client_info": {
+          "package_name": "com.example.acplogs"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "839341731337-h7qfp551l19j09esbqgoit3r4htq73r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.acplogs",
+            "certificate_hash": "5bcf18e4c0d30dc10d7bb6eea254ba0bb66e1fef"
+          }
+        },
+        {
+          "client_id": "839341731337-hjusk4n034heggn37ibojrilkbfrrep8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeKEi8NLOhDVuZiqmcSjkaQixeyA1O3vQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "839341731337-hjusk4n034heggn37ibojrilkbfrrep8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

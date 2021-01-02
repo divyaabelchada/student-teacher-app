@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">AcpModule</string>
+    <string name="action_settings">Settings</string>
+
+    <!--Student Form Details  -->
+
+    <string name="personName">Full Name</string>  <!-- For student teacher both.  -->
+    <string name="Class">Class</string>
+    <string name="address">Address</string>
+    <string name="pincode">eg. Mumbai - 400076 </string>
+    <string name="email">eg. abcd@gmail.com</string>
+    <string name="contact">Contact Number</string>
+    <string name="studentId">Student ID / Password </string>
+
+
+    <!-- used at multiple places  - dob,dateOfVisit-->
+    <string name="signup"> <u>Sign Up</u> instead!</string>
+
+
+    <string name="pictures">Upload Pictures</string>
+    <string name="email_address">Email Address*</string>
+    <string name="login_information">Login Information</string>
+    <string name="enroll_a_student">Enroll a Student</string>
+    <string name="student_id">Student ID*</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="name">Name*</string>
+    <string name="enter_your_full_name">Enter your Full Name</string>
+    <string name="Class_txt">Class*</string>
+    <string name="contactNo">Contact*</string>
+    <string name="date_of_birth">Date of Birth*</string>
+    <string name="date">dd/mm/yy</string>
+    <string name="address_txt">Address*</string>
+    <string name="city_pincode">City-Pincode*</string>
+    <string name="submit">Submit</string>
+    <string name="add_your_social_work">Add Your Social Work</string>
+    <string name="description">Description*</string>
+    <string name="name_of_agency">Name of Agency</string>
+    <string name="write_description_here">Write Description Here...</string>
+    <string name="working_hours">Working Hours</string>
+    <string name="feedback">feedback</string>
+    <string name="date_txt">Date*</string>
+    <string name="agency_name">Agency Name</string>
+    <string name="location">Location</string>
+    <string name="upload_profile">Upload Profile</string>
+    <string name="kind_of_work">Kind of work..</string>
+    <string name="random_para">A paragraph is a series of related sentences developing a central idea, called the topic. Try to think about paragraphs in terms of thematic unity: a paragraph is a sentence or a group of sentences that supports one central, unified idea. Paragraphs add one idea at a time to your broader argument.</string>
+    <string name="address_demo">374 William S Canning Blvd, Fall River MA 2721. 121 Worcester Rd, Framingham MA 1701. 677 Timpany Blvd</string>
+    <string name="upload_pic"><u> Click on Image to Upload a picture </u>.</string>
+    <string name="sign_up_as_teacher"> <u>SignUp</u> as Teacher?</string>
+    <string name="yes">Yes</string>
+    <string name="department">Department*</string>
+    <string name="eg_computer_science">eg. Computer Science</string>
+    <string name="logout">Logout</string>
+    <string name="security_code">Enter Security Code</string>
+    <string name="sign_up">Sign Up!</string>
+    <string name="link_map">Add a link to Google Maps</string>
+    <string name="enter_link">Enter link (optional)</string>
+    <string name="upload_cerificate"> <u> Upload Cerificate </u> </string>
+    <string name="login">Login</string>
+    <string name="email_">Email :</string>
+    <string name="contact_">Contact :</string>
+    <string name="department_">Department :</string>
+    <string name="role_">Role :</string>
+    <string name="upload_profile_txt">Click on image to Upload/edit Profile</string>
+    <string name="no_feedbacks_yet">No Feedbacks yet..</string>
+    <string name="opening_time">Opening Time</string>
+    <string name="closing_time">Closing time</string>
+    <string name="opening_hours">Opening Hours</string>
+    <string name="eg_5">eg. 5</string>
+    <string name="search">Search....</string>
+    <string name="agencies">Agencies</string>
+    <string name="profile">"Profile "</string>
+    <string name="search_agency">Search Agency</string>
+    <string name="area">Area*</string>
+    <string name="chembur">Chembur</string>
+    <string name="area_txt">Area</string>
+    <string name="click_on_the_icon_to_upload_a_picture">Click on the icon to upload a picture*</string>
+    <string name="caption">Caption</string>
+    <string name="your_progress">Your Progress</string>
+    <string name="certificates">Certificates</string>
+    <string name="contact_teacher">Contact Teacher</string>
+    <string name="daily_log">Daily Log</string>
+    <string name="update_links">Update Links</string>
+    <string name="teachers">Teachers</string>
+    <string name="add_agency">Add Agency</string>
+    <string name="student_logs">Student Logs</string>
+    <string name="students">Students</string>
+
+</resources>
+
